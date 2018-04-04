@@ -22,6 +22,10 @@ class TestUserdata(unittest.TestCase):
         
         self.assertTrue(Userdata)
 
+    def test_display_all_passwords(self):
+        """method that returns list of all passwords"""
+    
+        self.assertEqual(Userdata.display_passwords(),Password.passwordlist)
 
 if __name__ == '__main__':
      unittest.main()

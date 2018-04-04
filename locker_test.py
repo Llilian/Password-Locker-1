@@ -11,7 +11,7 @@ class TestPassword(unittest.TestCase):
 
     def tearDown(self):
         """ clearing the array """
-        Password.user_profile = []
+        Password.passwordlist = []
 
     def test_init(self):
     
@@ -29,7 +29,7 @@ class TestPassword(unittest.TestCase):
     def test_save_Password(self):
 
         self.new_Password.save_password()
-        self.assertEqual(len(Password.user_profile),1)
+        self.assertEqual(len(Password.passwordlist),1)
 
 
 
@@ -40,7 +40,7 @@ class TestPassword(unittest.TestCase):
         self.new_Password.save_password()
         test_password = Password("Test","user","collo","test@user.com")
         test_password.save_password()
-        self.assertEqual(len(Password.user_profile),2)
+        self.assertEqual(len(Password.passwordlist),2)
 
     def test_delete_password(self):
         """test_delete_password to test if we can remove list"""
@@ -49,7 +49,7 @@ class TestPassword(unittest.TestCase):
         test_password.save_password()
         test_password.delete_password()
         
-        self.assertEqual(len(Password.user_profile),0)
+        self.assertEqual(len(Password.passwordlist),0)
 
     def test_find_password_by_username(self):
         """test to see if we can find pass word"""

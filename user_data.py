@@ -1,4 +1,4 @@
-class Userdata:
+class Userdata():
 
     """class accepts user input"""
 
@@ -18,4 +18,8 @@ class Userdata:
         """delete_userdata from user_profile"""
 
         Userdata.user_profile.remove(self)
-            
+
+    @classmethod
+    def display_passwords(cls):
+        '''Method to dispaly_passwords'''
+        return cls.user_profile
