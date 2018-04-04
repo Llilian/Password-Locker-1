@@ -56,13 +56,24 @@ class TestPassword(unittest.TestCase):
 
     def test_delete_password(self):
         """test_delete_password to test if we can remove list"""
-        self.new_Password.save_password()
+        #self.new_Password.save_password()
         test_password =Password("Test","user","collo","test@user.com")
         test_password.save_password()
-        Password.delete_password(self)
-        self.assertEqual(len(Password.user_profile),1)
+        test_password.delete_password()
+        
+        self.assertEqual(len(Password.user_profile),0)
 
+    def test_find_password_by_username(self):
+        """test to see if we can find pass word"""
 
+        #self.new_Password.save_password()
+        test_password = Password("Test","user","collo","test@user.com")
+        test_password.save_password()
+
+        found_Password =Password.find_by_username("collo")
+        self.assertEqual(found_Password.password,test_password.password)
+
+    
 if __name__ == '__main__':
      unittest.main()
  
