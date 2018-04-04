@@ -10,5 +10,12 @@ class that generates password and stores it
         self.last_name = last_name
         self.username = username
         self.password = password
+    
+    def save_password(self):
+       
+        Password.user_profile.append(self)
+            
+
+        
 
     
