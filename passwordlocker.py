@@ -21,10 +21,10 @@ class that generates password and stores it
         Password.user_profile.remove(self)
 
     @classmethod            
-    def find_by_username(cls, usern):
+    def find_by_username(cls, username):
             """Method taht takes in a username and returns  a password that matches that username"""
             for word in cls.user_profile:
-                if word.username == usern:
+                if word.username == username:
                     return word
             
 

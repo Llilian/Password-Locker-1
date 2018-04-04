@@ -3,16 +3,6 @@ from passwordlocker import Password
 
 class TestPassword(unittest.TestCase):
 
-    '''
-     
-    Test class that defines test cases for the contact class behaviours.
-
-    Args:
-        unittest.TestCase: TestCase class that helps in creating test cases
-    
-
-    '''
-
     def setUp(self): 
         '''
         Set up method to run before each test cases.
@@ -46,9 +36,7 @@ class TestPassword(unittest.TestCase):
  #class creation
     
     def test_save_multiple_password(self):
-        '''
-        test_save_multiple_password to check if we can save multiple passwords
-        '''
+        '''test_save_multiple_password to check if we can save multiple passwords'''
         self.new_Password.save_password()
         test_password = Password("Test","user","collo","test@user.com")
         test_password.save_password()
