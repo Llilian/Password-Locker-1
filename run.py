@@ -84,4 +84,13 @@ def main():
 
                 print("Enter the + Username + u wana search for")
 
-     
+                search_username = input()
+                if check_existing_password(search_username):
+                    search_password = find_password(search_username)
+                    print("{search_password.first_name} {search_password.last_name}")
+                    print ('-'*20)
+
+                    print("Username ......{search_password.username}")
+                    print("Password ......{search_password.password}")
+
+                else:
