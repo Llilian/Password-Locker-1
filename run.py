@@ -11,4 +11,9 @@ def save_password(Password):
             '''Function to save password'''
             Password.save_password
 
+def del_password(password):
+            '''fuunction to delete password'''
+            password.delete_password()
+
+
 
