@@ -18,3 +18,14 @@ def del_password(password):
 def find_password(username):
             '''function to find password'''
             return Password.find_by_username(username)
+
+def check_existing_password(username):
+            '''function to check if password exists and return boolean '''
+            return Password.passwordlist(username)
+    
+def display_contacts():
+            '''Function to display all saved passwords'''
+            return Userdata.display_passwords()
+
+
+
