@@ -94,3 +94,13 @@ def main():
                     print("Password ......{search_password.password}")
 
                 else:
+
+                    print("That Password does not exist")
+
+        elif short_code == "ex":
+                print("Bye ....")
+                break
+        else:
+            
+                print("I really dint get that Please use the short codes")
+
