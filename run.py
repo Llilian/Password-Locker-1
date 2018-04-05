@@ -75,4 +75,13 @@ def main():
 
                     print('\n')
             
-            
+            else:
+                    print('\n')
+                    print("You dont seem  to have an  #### Password #### saved yet")
+                    print('\n')
+
+        elif short_code == 'fp':
+
+                print("Enter the + Username + u wana search for")
+
+     
