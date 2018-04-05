@@ -62,3 +62,17 @@ def main():
             print ('\n')
             print ("Userdata {first_name}{last_name} created")
             print ('\n')
+        
+
+        elif short_code == 'dp':
+            
+            if display_password():
+                print("##### Here i$ A L!st of all Passwords #####")
+                print('\n')
+
+                for password in display_password():
+                    print("{password.first_name} {password.last_name}.....{password.username}")
+
+                    print('\n')
+            
+            
