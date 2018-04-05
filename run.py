@@ -15,5 +15,6 @@ def del_password(password):
             '''fuunction to delete password'''
             password.delete_password()
 
-
-
+def find_password(username):
+            '''function to find password'''
+            return Password.find_by_username(username)
