@@ -1,4 +1,5 @@
 import unittest
+import pyperclip
 from passwordlocker import Password
 from user_data import Userdata
 
@@ -7,9 +8,7 @@ class TestUserdata(unittest.TestCase):
     '''Test class'''
 
     def setUp(self):
-        '''
-        Set up method to run before each test cases.
-        '''
+        '''Set up method to run before each test cases.'''
         self.new_Userdata = Userdata("collins", "12345")
         
 
@@ -26,6 +25,14 @@ class TestUserdata(unittest.TestCase):
         """method that returns list of all passwords"""
     
         self.assertEqual(Userdata.display_passwords(),Password.passwordlist)
+
+    '''
+    def test_copy_password(self):
+        
+        self.new_Userdata.save_userdata()
+        Userdata.copy_password                                                                                                                                                                                                                                                                ("12345")
+        self.assertEqual(self.new_Userdata.passwordlist,pyperclip.paste())'''
+
 
 if __name__ == '__main__':
      unittest.main()

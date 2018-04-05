@@ -4,9 +4,7 @@ from passwordlocker import Password
 class TestPassword(unittest.TestCase):
 
     def setUp(self): 
-        '''
-        Set up method to run before each test cases.
-        '''
+        '''Set up method to run before each test cases.'''
         self.new_Password = Password("Collins","Kariuki","collo","karizy")
 
     def tearDown(self):
@@ -15,9 +13,7 @@ class TestPassword(unittest.TestCase):
 
     def test_init(self):
     
-        '''
-        test_init test case to test if the object is initialized properly
-        '''
+        '''test_init test case to test if the object is initialized properly'''
 
         self.assertEqual(self.new_Password.first_name,"Collins")
         self.assertEqual(self.new_Password.last_name,"Kariuki")

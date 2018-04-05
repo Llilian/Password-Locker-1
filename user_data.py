@@ -1,3 +1,4 @@
+import pyperclip
 class Userdata():
 
     """class accepts user input"""
@@ -23,3 +24,8 @@ class Userdata():
     def display_passwords(cls):
         '''Method to dispaly_passwords'''
         return cls.user_profile
+   
+    '''' @classmethod
+    def copy_password(cls,number):
+        password_found = user_profile.find_by_username(Userdata)
+        pyperclip.copy(password_found.password)'''
