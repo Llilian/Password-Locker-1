@@ -29,3 +29,36 @@ def display_contacts():
 
 
 
+def main():
+    print("Hello Welcome to Password list. What is your name?")
+    username = input()
+
+    print("Hello {user_name}. What would you like to do?")
+    print('\n')
+
+    while True:
+        print("Use this short codes : pp - create a new password dp - delete password, fp -find password, ep -exit password list")
+
+        short_code = input ().lower()
+
+        if short_code == "pp":
+            print("++++++ New Password....++++++")
+            print("-"*10)
+
+            print ("++++++ First name....+++++++")
+            first_name = input()
+
+            print ("++++++ Last Name......+++++++")
+            last_name = input()
+
+            print ("++++++ Username ........+++++++")
+            username = input()
+
+            print ("#####Password.........########")
+            password = input()
+
+
+            save_password(create_password(first_name,last_name,username,password)) #create and save new password
+            print ('\n')
+            print ("Userdata {first_name}{last_name} created")
+            print ('\n')
