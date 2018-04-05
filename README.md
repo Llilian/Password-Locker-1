@@ -17,3 +17,7 @@
 -from there you can access the work
 #{follow the above instructions for set up}
 
+#Description
+This is an application where users can create and store passwords for various accounts.
+
+#
