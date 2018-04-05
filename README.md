@@ -20,4 +20,10 @@
 #Description
 This is an application where users can create and store passwords for various accounts.
 
-#
+#Contact
+-Mobile number: (254) 798731203
+-Email Address: collo.kariss@gmail.com
+-github: zecollokaris
+
+
+
