@@ -1,109 +1,78 @@
 #!/usr/bin/env python3.6
-from passwordlocker import Password
-from user_data import Userdata
+from user import User
+from credentials import Info
 
-
-def create_password(first_name, last_name, username, password):
-            '''Function to create password'''
-            new_password = Password(first_name, last_name, username, password)
-
-def save_password(Password):
-            '''Function to save password'''
-            Password.save_password
-
-def del_password(password):
-            '''fuunction to delete password'''
-            password.delete_password()
-
-def find_password(username):
-            '''function to find password'''
-            return Password.find_by_username(username)
-
-def check_existing_password(username):
-            '''function to check if password exists and return boolean '''
-            return Password.passwordlist(username)
-    
-def display_contacts():
-            '''Function to display all saved passwords'''
-            return Userdata.display_passwords()
-
-
-
+def create_account(f_name,m_name,e_mail):
+    new_user = User(f_name,m_name,e_mail)
+    return new_user
+def create_credentials(face_bookp,e_mailp):
+    new_cred = Info(face_bookp,e_mailp)
+    return new_cred
+def save_account(user):
+    user.save_user()
+def save_credentials(credentials):
+    credentials.save_info()
+def display_users():
+    return User.display_users()
+def display_creds():
+    return Info.display_info()
 def main():
-    print("Hello Welcome to Password list. What is your name?")
-    username = input()
-
-    print("Hello {user_name}. What would you like to do?")
-    print('\n')
-
+    print("Hello there welcome to password locker .....")
     while True:
-        print("Use this short codes : pp - create a new password dp - delete password, fp -find password, ep -exit password list")
+        print("Use the following short codes :cc- create an a new account ,ex- exit the password locker,dac -display accounts,gs-generate password")
+        short_code = input() .lower()
+        if short_code =='cc':
+            print("Create a new account")
+            print ("-"* 10)
 
-        short_code = input ().lower()
-
-        if short_code == "pp":
-            print("++++++ New Password....++++++")
-            print("-"*10)
-
-            print ("++++++ First name....+++++++")
-            first_name = input()
-
-            print ("++++++ Last Name......+++++++")
-            last_name = input()
-
-            print ("++++++ Username ........+++++++")
-            username = input()
-
-            print ("#####Password.........########")
-            password = input()
-
-
-            save_password(create_password(first_name,last_name,username,password)) #create and save new password
-            print ('\n')
-            print ("Userdata {first_name}{last_name} created")
-            print ('\n')
-        
-
-        elif short_code == 'dp':
-            
-            if display_password():
-                print("##### Here i$ A L!st of all Passwords #####")
+            print("what is your first name...")
+            f_name =input()
+            print("What is your middle name...")
+            m_name= input()
+            print("what is your email address..")
+            e_mail= input()
+            print ("what is your facebook password...")
+            face_bookp =input()
+            print("what is your email password...")
+            e_mailp= input()
+            save_account(create_account(f_name,m_name,e_mail))
+            print('\n')
+            save_credentials(create_credentials (face_bookp,e_mailp))
+            print('\n')
+            print(f"New Account  {f_name}{m_name}{face_bookp} has been created")
+            print('\n')
+        elif short_code =='dac':
+            if display_users():
+                print("The user name")
                 print('\n')
-
-                for password in display_password():
-                    print("{password.first_name} {password.last_name}.....{password.username}")
-
-                    print('\n')
-            
+                for user in display_users():
+                    print(f"{user.f_name}{user.m_name}")
+                for credentials in display_creds():
+                    print (f"{face_bookp}")
             else:
                     print('\n')
-                    print("You dont seem  to have an  #### Password #### saved yet")
-                    print('\n')
+                    print("you have not created any accounts yet... :( ")
+        elif  short_code == 'gs':
+            print("To generate password enter f_name and face_bookp")
+            list_of_inputs = [c for c in input()]
 
-        elif short_code == 'fp':
+            # list_of_inputs= list(list_of_inputs)
+            list_of_inputs.reverse()
 
-                print("Enter the + Username + u wana search for")
 
-                search_username = input()
-                if check_existing_password(search_username):
-                    search_password = find_password(search_username)
-                    print("{search_password.first_name} {search_password.last_name}")
-                    print ('-'*20)
 
-                    print("Username ......{search_password.username}")
-                    print("Password ......{search_password.password}")
+            print (list_of_inputs)
 
-                else:
 
-                    print("That Password does not exist")
+
+
+
 
         elif short_code == "ex":
-                print("Bye ....")
-                break
+            print("Bye... Bye...")
+            break
         else:
-            
-                print("I really dint get that Please use the short codes")
-
+            print("please select one ofthe options provided")
 
 if __name__ == '__main__':
 
