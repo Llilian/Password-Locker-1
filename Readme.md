@@ -44,9 +44,9 @@ The app will open on terminal
 
 ## Built With
 
-* [Python3.6](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
+* [Python3.6](https://docs.python.org/3/)
 
-* Ascii Text
+* [Ascii Text](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
 ## Authors
 
