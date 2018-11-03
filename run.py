@@ -31,14 +31,17 @@ def main():
     print(" ")
     print(" ")
     while True:
+        print("-" * 156)
         print("""USE THE FOLLOWING SHORT CODES!!
-1. cc- create an a new account
-2. ex- exit the password locker,
-3. dac -display accounts,gs-generate password""")
+1. cc - CREATE NEW ACCOUNT
+2. ex - EXIT PASSWORD LOCKER
+3. dac - DISPLAY ACCOUNTS
+4. gs - GENERATE PASSWORDS""")
 
 
         print(" ")
         print("      TYPE IN A SHORT CODE!")
+        print(" ")
         short_code = input() .lower()
         if short_code =='cc':
             print(" ")
@@ -65,21 +68,33 @@ def main():
             print('\n')
             save_credentials(create_credentials (face_bookp,e_mailp))
             print('\n')
-            print(f"New Account  {f_name}{m_name}{face_bookp} has been created")
+            print("-" * 156)
+            print(f"New Account  {f_name } { m_name} { face_bookp } has been created")
             print('\n')
         elif short_code =='dac':
             if display_users():
+                print(" ")
                 print("The user name")
+                print(" ")
                 print('\n')
                 for user in display_users():
                     print(f"{user.f_name}{user.m_name}")
                 for credentials in display_creds():
                     print (f"{face_bookp}")
+                    print(" ")
+
             else:
                     print('\n')
-                    print("you have not created any accounts yet... :( ")
+                    print("-" * 156)
+                    print(" ")
+                    print("                         PLEASE CREATE AN ACCOUNT ")
+                    print("                    You have not created an account yet :( ")
+                    print(" ")
         elif  short_code == 'gs':
-            print("To generate password enter f_name and face_bookp")
+            print(" ")
+            print(" ")
+            print("TO GENERATE A PASSWORD ADD IN YOUR FIRST NAME AND FACEBOOK BELOW!!")
+            print(" ")
             list_of_inputs = [c for c in input()]
 
             # list_of_inputs= list(list_of_inputs)
@@ -95,10 +110,20 @@ def main():
 
 
         elif short_code == "ex":
-            print("Bye... Bye...")
+            print("-" * 156)
+            print(" ")
+            print("                        THAX FOR DROPING IN!")
+            print("                           Bye... Bye...")
+            print(" ")
+            print("-" * 156)
             break
         else:
-            print("please select one ofthe options provided")
+            print("-" * 156)
+            print(" ")
+            print("                              RETRY!!")
+            print(" ")
+            print("                Please Select One Of The Options Provided")
+            print(" ")
 
 if __name__ == '__main__':
 
