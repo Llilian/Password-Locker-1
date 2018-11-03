@@ -34,12 +34,13 @@ Link:-> ```https://github.com/zecollokaris/password-locker```
 ### Prerequisites
 
 What things you need to install the application and how to install them
+
 ```
 Python3.6
 ```
 ## Installation
 
-To Install python 3.6 on terminal execute
+To Install **python 3.6** on terminal execute
 
 ```
 apt-get install python3.6
@@ -56,6 +57,8 @@ The app will open on terminal
 
 2. Follow and answer the prompts to use the application.
 
+3. Cheers :beers: Enjoy the Application. :smirk:
+
 ## Built With
 
 * [Python3.6](https://docs.python.org/3/)
@@ -68,8 +71,5 @@ The app will open on terminal
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
-
-
-
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE.md) file for details
 
