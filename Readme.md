@@ -4,6 +4,10 @@ Having trouble in creating a new password or trying to remember new passwords th
 
 This is a simple shell application that allows a user to store their profile credentials and also generate a strong password.
 
+## Authors
+
+* **Collins Kariuki**
+
 ## Getting Started
 
 **These Simple Instructions will get you a copy of the application running on your terminal.**
@@ -65,9 +69,14 @@ The app will open on terminal
 
 * [Ascii Text](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
-## Authors
 
-* **Collins Kariuki**
+## Support & Contact
+
+- Mobile number: (+254) 798731203
+
+- Email Address: collo.kariss@gmail.com
+
+- github-username: zecollokaris
 
 ## License
 
