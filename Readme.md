@@ -33,7 +33,7 @@ Link:-> ```https://github.com/zecollokaris/password-locker```
 
 ### Prerequisites
 
-What things you need to install the application and how to install them
+**What things you need to install the application and how to install them.**
 
 ```
 Python3.6
@@ -52,7 +52,7 @@ apt-get install pip3
 
 ## Running the application
 
-1. Navigate into the cloned folder using terminal and enter command `./run.py` to run the app.
+1. Navigate into the cloned folder using terminal and **enter command** `./run.py` to run the app.
 The app will open on terminal
 
 2. Follow and answer the prompts to use the application.
