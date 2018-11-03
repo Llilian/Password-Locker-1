@@ -36,14 +36,17 @@ apt-get install pip3
 
 ## Running the application
 
-Navigate into the cloned folder using terminal and enter command `./run.py` to run the app
+1. Navigate into the cloned folder using terminal and enter command `./run.py` to run the app.
 The app will open on terminal
 ![default screen](/vault.png)
 
-Follow and answer the prompts to use the application.
+2. Follow and answer the prompts to use the application.
 
 ## Built With
-* [Python3.6](https://docs.python.org/3/)
+
+* [Python3.6](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
+
+* Ascii Text
 
 ## Authors
 
