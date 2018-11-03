@@ -1,10 +1,23 @@
-# password-locker
+# Password-Locker :closed_lock_with_key:
 
-A simple shell application that allows a user to store their profile credentials and also generate a strong password.
+Having trouble in creating a new password or trying to remember new passwords this reposirory gutch u!! :wink:
+
+This is a simple shell application that allows a user to store their profile credentials and also generate a strong password.
 
 ## Getting Started
 
-These instructions will get you a copy of the application running on your terminal.
+**These Simple Instructions will get you a copy of the application running on your terminal.**
+
+1. You need to get into the Project Repository.
+
+Link:-> ```https://github.com/zecollokaris/password-locker```
+
+2. Clone the project.
+
+3. get into project folder (cd into project).
+
+4. If you have all the Pre-requisites you can run the application.
+
 
 ### Prerequisites
 
@@ -13,29 +26,16 @@ What things you need to install the application and how to install them
 Python3.6
 ```
 ## Installation
+
 On terminal execute
+
 ```
 apt-get install python3.6
 apt-get install pip3
 ```
 
-### Dependencies
 
 
-* [pyfiglet](https://github.com/pwaller/pyfiglet)
-* [termcolor](https://pypi.python.org/pypi/termcolor)
-* [colorama](https://pypi.python.org/pypi/colorama)
-* [pyperclip](https://pypi.python.org/pypi/pyperclip)
-
-### Installing Dependencies
-
-On terminal execute:
-
-```
-pip3 install pyfiglet
-pip3 install termcolor
-pip3 install colorama
-pip3 install pyperclip
 ```
 
 ## Running the application
