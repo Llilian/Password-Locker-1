@@ -20,7 +20,16 @@ Link:-> ```https://github.com/zecollokaris/password-locker```
 
 ## DISPLAY
 
-
+![](spec.md/password1.png)
+---
+![](spec.md/password2.png)
+---
+![](spec.md/password3.png)
+---
+![](spec.md/password4.png)
+---
+![](spec.md/passwordlast.png)
+---
 
 ### Prerequisites
 
