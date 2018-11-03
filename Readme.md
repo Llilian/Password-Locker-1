@@ -18,6 +18,9 @@ Link:-> ```https://github.com/zecollokaris/password-locker```
 
 4. If you have all the Pre-requisites you can **run the application.**
 
+## DISPLAY
+
+
 
 ### Prerequisites
 
@@ -41,7 +44,6 @@ apt-get install pip3
 
 1. Navigate into the cloned folder using terminal and enter command `./run.py` to run the app.
 The app will open on terminal
-![default screen](/vault.png)
 
 2. Follow and answer the prompts to use the application.
 
@@ -57,7 +59,7 @@ The app will open on terminal
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
 
 
 
