@@ -34,15 +34,9 @@ apt-get install python3.6
 apt-get install pip3
 ```
 
-
-
-```
-
 ## Running the application
 
-Navigate into the cloned folder using terminal and enter command `chmod +x run.py` to give execute permission to the file then
-run the app `./run.py`.
-
+Navigate into the cloned folder using terminal and enter command `./run.py` to run the app
 The app will open on terminal
 ![default screen](/vault.png)
 
