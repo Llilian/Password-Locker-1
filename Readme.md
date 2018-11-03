@@ -53,7 +53,7 @@ Follow and answer the prompts to use the application.
 
 ## Authors
 
-* **Mwangi Njuguna**
+* **Collins Kariuki**
 
 ## License
 
