@@ -8,15 +8,15 @@ This is a simple shell application that allows a user to store their profile cre
 
 **These Simple Instructions will get you a copy of the application running on your terminal.**
 
-1. You need to get into the Project Repository.
+1. You need to get into the **Project Repository.**
 
 Link:-> ```https://github.com/zecollokaris/password-locker```
 
-2. Clone the project.
+2. **Clone the project.**
 
-3. get into project folder (cd into project).
+3. **get into project** folder (cd into project).
 
-4. If you have all the Pre-requisites you can run the application.
+4. If you have all the Pre-requisites you can **run the application.**
 
 
 ### Prerequisites
@@ -27,10 +27,13 @@ Python3.6
 ```
 ## Installation
 
-On terminal execute
+To Install python 3.6 on terminal execute
 
 ```
 apt-get install python3.6
+```
+
+```
 apt-get install pip3
 ```
 
