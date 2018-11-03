@@ -31,21 +31,35 @@ def main():
     print(" ")
     print(" ")
     while True:
-        print("USE THE FOLLOWING SHORT CODES :cc- create an a new account ,ex- exit the password locker,dac -display accounts,gs-generate password")
+        print("""USE THE FOLLOWING SHORT CODES!!
+1. cc- create an a new account
+2. ex- exit the password locker,
+3. dac -display accounts,gs-generate password""")
+
+
+        print(" ")
+        print("      TYPE IN A SHORT CODE!")
         short_code = input() .lower()
         if short_code =='cc':
-            print("Create a new account")
-            print ("-"* 10)
-
-            print("what is your first name...")
+            print(" ")
+            print("-" * 156)
+            print("      CREATE A NEW ACCOUNT!")
+            print(" ")
+            print(" ")
+            print("what is your first name?..")
+            print(" ")
             f_name =input()
-            print("What is your middle name...")
+            print("What is your middle name?..")
+            print(" ")
             m_name= input()
-            print("what is your email address..")
+            print("what is your email address?..")
+            print(" ")
             e_mail= input()
-            print ("what is your facebook password...")
+            print ("what is your facebook password?..")
+            print(" ")
             face_bookp =input()
-            print("what is your email password...")
+            print("what is your email password?..")
+            print(" ")
             e_mailp= input()
             save_account(create_account(f_name,m_name,e_mail))
             print('\n')
