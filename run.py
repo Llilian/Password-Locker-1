@@ -17,9 +17,21 @@ def display_users():
 def display_creds():
     return Info.display_info()
 def main():
-    print("Hello there welcome to password locker .....")
+    print(" ")
+    print(""" 
+
+██╗   ██╗ █████╗ ██╗   ██╗██╗  ████████╗   ▐█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█▄☆       
+██║   ██║██╔══██╗██║   ██║██║  ╚══██╔══╝   ███████████████████████
+██║   ██║███████║██║   ██║██║     ██║      ▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▓▓▓▓◤
+╚██╗ ██╔╝██╔══██║██║   ██║██║     ██║      ▀░▐▓▓▓▓▓▓▌▀█░░░█▀
+ ╚████╔╝ ██║  ██║╚██████╔╝███████╗██║       ░░▓▓▓▓▓▓█▄▄▄▄▄█▀
+  ╚═══╝  ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝        █▓▓▓▓▓▌                              
+""")
+    print("HELLO THERE  WELCOME!!")
+    print(" ")
+    print(" ")
     while True:
-        print("Use the following short codes :cc- create an a new account ,ex- exit the password locker,dac -display accounts,gs-generate password")
+        print("USE THE FOLLOWING SHORT CODES :cc- create an a new account ,ex- exit the password locker,dac -display accounts,gs-generate password")
         short_code = input() .lower()
         if short_code =='cc':
             print("Create a new account")
