@@ -3,9 +3,9 @@ from  user import User
 
 class TestUser(unittest.TestCase):
     def setUp(self):
-        self.new_user = User("Mary","Anne","mary@gmail.com",)
+        self.new_user = User("Collins","Kariuki","collins@gmail.com",)
     def test1(self):
-        self.assertEqual(self.new_user.f_name,"Mary")
+        self.assertEqual(self.new_user.f_name,"Collins")
         self.assertEqual(self.new_user.m_name,"Anne")
         self.assertEqual(self.new_user.e_mail,"mary@gmail.com")
     def test_save_user(self):
